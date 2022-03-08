@@ -16,6 +16,13 @@ export const Content = styled(Link)`
     max-width: 315px;
     text-align: center;
 
+    img{
+        width: 100px;
+        height: 90px;
+        display: block;
+        margin: 0 auto;
+    }
+
     form{
         display: flex;
         flex-direction:column;
@@ -39,7 +46,7 @@ export const Content = styled(Link)`
             width: 315px;
             margin: 5px 0 0;
             height: 44px;
-            background: #f25022;
+            background: red;
             font-weight: bold;
             color: #fff;
             border: 0;
@@ -54,7 +61,7 @@ export const Content = styled(Link)`
         a{
             color: #00a4ef;
             margin: 5px 0 5px 0;
-            font-size: 16px;
+            font-size: 14px;
             opacity: 0.8;
             display: flex;
             justify-content: left;

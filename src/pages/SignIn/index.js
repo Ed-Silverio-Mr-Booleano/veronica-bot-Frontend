@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 import { Wrapper, Content } from './style';
-import logo from '../../assets/images/logo.svg';
+import logo from '../../assets/images/logo.png';
 
 export default function SignIn() {
   return (
@@ -15,7 +15,7 @@ export default function SignIn() {
           
           <input type="email" placeholder="Usuario" />
           <input type="password" placeholder="Sua senha"/>
-          <a>Esqueci a senha!</a>
+          <Link>Esqueci a senha!</Link>
 
           <Link to="/dashboard">
             <button>Entar</button>

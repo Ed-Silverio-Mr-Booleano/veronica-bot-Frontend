@@ -5,7 +5,9 @@ import Header from '../../components/Header';
 import {Link} from 'react-router-dom';
 import Avatar from '../../assets/images/avatar.jpg';
 
-
+import Line from '../../components/ComponentLine';
+import ProgressBar from '../../components/ComponentProgressBar';
+import Button from '../../components/ComponentButton';
 
 export default function Dashboard() {
   return (
@@ -23,23 +25,20 @@ export default function Dashboard() {
       </div>
 
       <div>
-        
         <Link to="/agent">
-          <button>Cadastrar novo agente</button>
+          <Button title = "Cadastrar novo agente" />
         </Link>
 
         <Link to="/create">
-          <button className='btn'>Criar nova cena</button>
+          <Button className='btn' title = "Criar nova cena" />
         </Link>
-        
-        
       </div>
 
       <span className='title'>
         <BsPencilSquare size={20} color="#000"/>
         <p>Você tem 2 cenas para finalizar:</p>
       </span>
-      <hr />
+      <Line />
 
       <div className='statu'>
         <BsCameraVideoFill size={20} color="#000"/>
@@ -49,15 +48,8 @@ export default function Dashboard() {
         </h4>
       </div>
       
-      <div className='progressBar'>
-          <p>Falta escrever 20 comentários finalizar está cena</p>
-
-          <div>
-               <span>50%</span>
-          </div>
-      </div>
-
-      <hr />
+      <ProgressBar />
+      <Line />
 
       <div className='statu'>
         <BsCameraVideoFill size={20} color="#000"/>
@@ -67,15 +59,9 @@ export default function Dashboard() {
         </h4>
       </div>
 
-      <div className='progressBar'>
-          <p>Falta escrever 8 comentários finalizar está cena</p>
 
-          <div>
-               <span>50%</span>
-          </div>
-      </div>
-
-      <hr />
+      <ProgressBar />
+      <Line />
 
       <span className='title'>
         <BsPersonSquare size={20} color="#000"/>

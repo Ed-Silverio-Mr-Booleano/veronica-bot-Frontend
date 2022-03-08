@@ -8,7 +8,7 @@ export default function CenaAovivo() {
   return (
     <Wrapper>
       <Header />
-          <div>
+          <div className='title'>
             <h1>Cena ao Vivo</h1>
             <p>Atribuída para Monica</p>
             <hr/>
@@ -42,7 +42,10 @@ export default function CenaAovivo() {
           </p> 
         </div>
 
-        <hr/>
+        
+        <div>
+          <hr/>
+        </div>
 
         <div className='likeIcon'>
           <p> Fila de comentarios</p> 
@@ -60,7 +63,7 @@ export default function CenaAovivo() {
                 <img src={Avatar}/> 
                 <span> 
                   <p> 
-                    1# Alessandro123 Live top! Sou inscrito do canal e acompanho
+                   1# <strong>Alessandro123 </strong> Live top! Sou inscrito do canal e acompanho
                     todos seu vídeo. Parabéns pelo excelente conteúdo! Mande
                     um salve ai para Goiânia! 
                  </p> 

@@ -1,22 +1,17 @@
 import React from 'react';
-import logo from '../../assets/images/logo.svg';
 import { Link } from 'react-router-dom';
 
-import { Container, Content } from './style';
+import { Container } from './style';
 
 export default function Header() {
   return (
     <Container>
-        <Content>
             <nav>
-                <a>exemplo@gmail.com</a>
-                <a>Configuração</a>
+                <li>exemplo@gmail.com</li>
+                <li>Configuração</li>
                
-                <Link to="/">
-                  <a>Sair</a>
-                </Link>
+                <li to="/">Sair</li>
             </nav>
-        </Content>
     </Container>
   );
 }
