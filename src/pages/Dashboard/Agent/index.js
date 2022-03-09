@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../../../components/Header';
-import { BsPersonFill } from 'react-icons/bs'
-import { BsTrophyFill } from 'react-icons/bs'
+import { BsTrophyFill , BsPersonFill} from 'react-icons/bs';
+import Line from '../../../components/ComponentLine';
 
 import Avatar from '../../../assets/images/avatar.jpg';
 
@@ -13,11 +13,12 @@ export default function Agent() {
     <Wrapper>
         <Header />
 
-        <div>
+        <div className='title'>
           <h1>Cadastrar novo agente</h1>
           <p>Cadastre novos Diretores e Comentaristas</p>
-          <hr/>
         </div>
+        <Line />
+
 
         <div className='userIcon'>
           <BsPersonFill size={35} color="#000"/>
@@ -64,11 +65,12 @@ export default function Agent() {
           <button>Cadastrar novo Diretor</button>
         </div>
 
-        <div>
+        <div className='title'>
           <h1>Diretorias</h1>
           <p>A seguir a lista de todas as diretorias cadastradas</p>
-          <hr/>
         </div>
+
+        <Line />
 
         <div>
              <div className='listDireito'>

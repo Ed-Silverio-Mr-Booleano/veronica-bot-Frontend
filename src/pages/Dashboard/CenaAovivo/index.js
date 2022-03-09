@@ -11,7 +11,10 @@ export default function CenaAovivo() {
           <div className='title'>
             <h1>Cena ao Vivo</h1>
             <p>Atribuída para Monica</p>
-            <hr/>
+         </div>
+
+         <div>
+           <hr />
          </div>
 
          <div className='video'>

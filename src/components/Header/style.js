@@ -1,20 +1,20 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-
+// Leyout Mobile
 @media (max-width: 568px) {
+    background: #c1c1c1;
     width: 100%;
     height: 64px;
     display: flex;
-    justify-content: end;
-    align-items: center;
-    background: blue;
+    justify-content: end !important;
+    align-items: center !important;
     margin:0px 0px 0px 0px !important;
 
     nav{
         display: flex;
         align-items: center;
-        margin-right: 0px !important;
+        margin-right: 10px !important;
         font-size: 13px;
 
         li{
@@ -26,12 +26,33 @@ export const Container = styled.div`
     }
 
 }
+
+//Leyout Table
+@media (max-width: 1024px) and (min-width: 568px){
+    background: #c1c1c1;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: end !important;
+    align-items: center !important;
+    margin:0px 0px 0px 0px !important;
+
+    nav{
+        display: flex;
+        align-items: center;
+        margin-right: 12px !important;
+        font-size: 13px;
+    }
+}
+
+//Leyout Desktop
+@media (max-width: 1440px) and (min-width: 768px){
     background: #c1c1c1;
     width: 100%;
     height: 64px;
     
     display: flex;
-    justify-content: end;
+    justify-content: end !important;
     align-items: center;
 
 
@@ -50,4 +71,6 @@ export const Container = styled.div`
             cursor: pointer;
         }
     }
+}
+  
 `;

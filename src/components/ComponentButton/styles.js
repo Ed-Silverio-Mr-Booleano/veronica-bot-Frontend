@@ -11,7 +11,7 @@ export const Container = styled.div`
         border: 0;
         border-radius: 4px;
         font-size: 16px;
-        margin: 60px 0 0px 10px;
+        margin: 30px 0 0px 10px;
     }
     
 `;

@@ -4,16 +4,20 @@ import { Wrapper } from './styles';
 import { BsCameraVideoFill,BsArchiveFill,BsPlusCircleFill,BsChatFill, BsBullseye, BsCheckLg, BsGearFill } from 'react-icons/bs'
 import Avatar from '../../../assets/images/avatar.jpg';
 
+import Line from '../../../components/ComponentLine'
+
 export default function Cenas() {
   return(
         <Wrapper>
           <Header />
 
-          <div>
+          <div className='title'>
             <h1>Cena</h1>
             <p>Atribuída para Monica</p>
-            <hr/>
          </div>
+
+         <Line />
+
 
          <div className='video'>
            <h1>Aqui vai o video</h1>
@@ -42,7 +46,7 @@ export default function Cenas() {
           </p> 
         </div>
 
-        <hr/>
+        <Line />
 
         <div className='likeIcon'>
           <p> Fila de Pacotes </p> 

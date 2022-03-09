@@ -24,7 +24,7 @@ export default function Dashboard() {
         </p>
       </div>
 
-      <div>
+      <div className='d-column'>
         <Link to="/agent">
           <Button title = "Cadastrar novo agente" />
         </Link>

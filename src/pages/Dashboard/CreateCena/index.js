@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../../components/Header';
 import { BsYoutube, BsTrophyFill, BsBullseye,BsChatFill,BsPersonSquare, BsFillHandThumbsUpFill, BsFillHandThumbsDownFill } from 'react-icons/bs'
+import Line from '../../../components/ComponentLine';
 
 import { Wrapper } from './styles';
 
@@ -9,11 +10,12 @@ export default function CreateCena() {
     
     <Wrapper>
          <Header />
-         <div>
+         <div className='title'>
             <h1>Criador de Cenas</h1>
             <p>Administrador e Diretor Tony</p>
-            <hr/>
+            
         </div>
+        <Line />
 
         <div className='userIcon'>
           <BsYoutube size={35} color="#000"/>
@@ -31,7 +33,7 @@ export default function CreateCena() {
 
         </div> 
 
-        <div className='likeIcon'>
+        <div className='likeIcon '>
           <BsYoutube size={35} color="#000"/>
           <span>Qual o link do Video no Youtube?</span> 
         </div>
